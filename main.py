@@ -11,6 +11,7 @@ class MainApp(MDApp):
         scr = MDScreen()
         self.lbl =MDLabel()
         toolbar = MDTopAppBar()
+        toolbar.title = "KivyMD testapp"
         toolbar.pos_hint = {"top":1}
         scr.add_widget(toolbar)
         self.count = 0
