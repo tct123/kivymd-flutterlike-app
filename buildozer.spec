@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = Flutter like App
+title = My Application
 
 # (str) Package name
-package.name = flutterlike
+package.name = myapp
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.tct
+package.domain = org.test
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,kivymd
+requirements = python3,kivy
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -50,7 +50,7 @@ requirements = python3,kivy,kivymd
 #icon.filename = %(source.dir)s/data/icon.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
-orientation = all
+orientation = portrait
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
@@ -93,7 +93,7 @@ fullscreen = 0
 #icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
-android.permissions = INTERNET
+#android.permissions = INTERNET
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
@@ -224,6 +224,9 @@ android.permissions = INTERNET
 # (str) XML file to include as an intent filters in <activity> tag
 #android.manifest.intent_filters =
 
+# (list) Copy these files to src/main/res/xml/ (used for example with intent-filters)
+#android.res_xml = PATH_TO_FILE,
+
 # (str) launchMode to set for the main activity
 #android.manifest.launch_mode = standard
 
@@ -329,6 +332,7 @@ android.allow_backup = True
 
 # (str) extra command line arguments to pass when invoking pythonforandroid.toolchain
 #p4a.extra_args =
+
 
 
 #
