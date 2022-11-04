@@ -18,7 +18,7 @@ class MainApp(MDApp):
         self.lbl.text = f"You pressed this Button {self.count} times"
         self.lbl.halign = "center"
         scr.add_widget(self.lbl)
-        addbtn = MDFloatingActionButton(icon = "android", on_release = self.btncounter)
+        addbtn = MDFloatingActionButton(icon = "language-python", on_release = self.btncounter)
         scr.add_widget(addbtn)
         return scr
     def btncounter(self,obj):
